@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+/*  .getborder {
+  border: 2px solid white; 
+}  */
+
+#navigation-button {
+    display: block;
+    position: absolute;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    color: #FCD900;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 1000;
+}
+#navigation-button svg {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#navigation-button:hover,#navigation-button:active {
+    width: 90px;
+    height: 90px;
+    transition: all 0.5s ease-out allow-discrete;
+}
+/* ########################### LANGUAGE WEBSITE ############ */
+/* ########################### LANGUAGE WEBSITE ############ */
+/* ########################### LANGUAGE WEBSITE ############ */
+/* ########################### LANGUAGE WEBSITE ############ */
+#language-options {
+    width: 180px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: transparent;
+    clip-path: none;
+
+}
+
+#language-options a {
+    letter-spacing: 1.2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #E8630A;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    height: 60px;
+    width: 60px;
+    /* background-color:#001E6C; */
+    clip-path: polygon(20% 0, 80% 0, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0 80%, 0 20%);
+
+ 
+}
+#language-options a:nth-child(1),#language-options a:nth-child(2) {
+    display: none;
+}
+#language-options a:nth-child(1):hover,
+#language-options a:nth-child(1):active,
+#language-options a:nth-child(2):hover,
+#language-options a:nth-child(2):active {
+    font-size: 25px;
+    transition: all 0.3s;
+}
+#language-options a:nth-child(3) {
+    font-size: 25px;
+}
+
+/* ########################### LANGUAGE WEBSITE ############ */
+
+
+.socials {
+    width: 150px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #E8630A;
+    height: 40px;
+    width: 40px;
+}
+
+.socials a svg {
+    width: 80%;
+    height: 80%;
+}
+.socials a svg:hover,#socials a svg:active {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-out;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(232,99,10,0.95);
+/* background-image: url(BACKGROUNDS/singapore.jpg);
+background-position: center;
+background-size: cover; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    position: fixed;
+    z-index: 100;
+}
+
+#navigation-close-button  {
+    display: block;
+    position: absolute;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    color:#001E6C;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#navigation-close-button svg {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+#navigation-close-button:hover,#navigation-close-button:active {
+    width: 90px;
+    height: 90px;
+    transition: all 0.5s ease-out allow-discrete;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 500px;
+   
+}
+
+
+   nav a {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-family: 'Alfa Slab One', serif;
+    text-align: center;
+    font-size: 35px;
+    color:#E8630A;
+    background-color: #001E6C;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+nav a span {
+    color: white;
+    font-family: 'Alfa Slab One', serif;
+}
+
+nav a:nth-child(1) {
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav a:nth-child(2) {
+    align-items: center;
+    justify-content: center;
+}
+
+nav a:nth-child(3) {
+    align-items: center;
+    justify-content: center;
+}
+
+nav a:hover,nav a:active {
+    font-size: 25px;
+     transition: font-size 0.5s ease;
+}
+
+/* ########################### NAV LANGUAGE WEBSITE ############ */
+#nav-language-options {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    clip-path: none;
+
+}
+
+#nav-language-options a {
+    letter-spacing: 1.2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:#001E6C;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    height: 40px;
+    width: 40px;
+    /* background-color:#001E6C; */
+    clip-path: polygon(20% 0, 80% 0, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0 80%, 0 20%);
+
+ 
+}
+/* #nav-language-options a:nth-child(1),#nav-language-options a:nth-child(2) {
+    display: none;
+} */
+#nav-language-options a:nth-child(1):hover,
+#nav-language-options a:nth-child(1):active,
+#nav-language-options a:nth-child(2):hover,
+#nav-language-options a:nth-child(2):active {
+    font-size: 25px;
+    transition: all 0.3s;
+}
+#nav-language-options a:nth-child(3) {
+    font-size: 25px;
+    background-color:#001E6C;
+    color:#E8630A;
+}
+
+
+
+#nav-socials a {
+    color: #001E6C;
+}
+
+
+
+
+/* ************ QUERIES ******************** *//* ************ QUERIES ******************** */
+/* ************ QUERIES ******************** *//* ************ QUERIES ******************** */
+/* ************ QUERIES ******************** *//* ************ QUERIES ******************** */
+/* ************ QUERIES ******************** *//* ************ QUERIES ******************** */
+
+@media only screen and (max-width: 1120px) {
+    nav a {
+        width: 250px;
+        height: 250px;
+        font-size: 25px;
+}
+nav a:hover,nav a:active {
+    font-size: 15px;
+     transition: font-size 0.5s ease;
+}
+}
+
+@media only screen and (max-width: 800px) {
+    header {
+        align-items: flex-start;
+    }
+
+    nav {
+        width: 100%;
+        height: 90%;
+        flex-direction: column;
+    }
+    
+
+    nav a {
+        width: 150px;
+        height: 150px;
+        font-size: 15px;
+}
+nav a:hover,nav a:active {
+    font-size: 15px;
+     transition: none;
+}
+}

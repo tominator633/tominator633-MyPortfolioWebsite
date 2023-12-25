@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+/*  .getborder {
+  border: 2px solid white; 
+}  */
+
+main {
+    background-color: #001E6C;
+}
+
+/* ################## ABOUT ME  #####################*/
+/* ################## ABOUT ME  #####################*/
+/* ################## ABOUT ME  #####################*/
+/* ################## ABOUT ME  #####################*/
+/* ################## ABOUT ME  #####################*/
+/* ################## ABOUT ME  #####################*/
+/* ################## ABOUT ME  #####################*/
+/* ################## ABOUT ME  #####################*/
+
+
+#aboutMe {
+    width: 100%;
+/*     background-image: linear-gradient(
+        to bottom,
+        rgba(232, 99, 10, 0.8),
+        rgba(232, 99, 10, 0.8)
+      ), url("BACKGROUNDS/IMG_2280.jpg");
+      background-position: center;
+      overflow: hidden;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed; */
+}
+
+/********************************************************** About me CONTAINER 1 */
+#aboutMe-container1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+#aboutMe h2 {
+    color: #E8630A;
+font-family: 'Alfa Slab One', serif;
+    font-size: 90px;
+/*     width: 360px; */
+text-align: center;
+  font-weight: 800;
+
+}
+
+#aboutMe h2 span {
+    color: white;
+    font-family: 'Alfa Slab One', serif;
+
+}
+#portrait-me-WRAP {
+    filter: drop-shadow(0px 0px 30px #000000);
+}
+
+#portrait-me {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    clip-path: circle(50% at 50% 50%);
+    background-color: #E8630A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#portrait-me img {
+    display: block;
+    height: auto;
+    width: 80%;
+}
+
+/********************************************************* About me CONTAINER 2 **/
+#aboutMe-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px ;
+
+
+
+}
+
+#castle {
+    height: 200px;
+    width: 200px;
+    background-color: #FCD900;
+
+}
+
+
+
+/* #aboutMe-article-WRAP {
+    filter: drop-shadow(0px 0px 30px #000000);
+
+} */
+
+#aboutMe-article {
+    width: 800px;
+    padding:40px;
+    background-color: white;
+
+    clip-path: polygon(0 0, 90% 0, 100% 20%, 100% 80%, 90% 100%, 0 100%, 0% 80%, 0% 20%);
+
+}
+#aboutMe-article p {
+    font-size: 20px;
+   color:#001E6C;
+   font-weight: 200;
+  
+}
+
+/************************************************* About me CONTAINER 3 **/
+#aboutMe-container3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#skills-headline {
+    width: 360px;
+    font-family: 'Alfa Slab One', serif;
+    font-weight: 200;
+    text-align: left;
+    font-size: 60px;
+    color: #E8630A;
+    margin-left: 100px;
+    
+}
+#skills-headline span {
+    font-family: 'Alfa Slab One', serif;
+    font-weight: 200;
+    color: white;
+}
+
+
+#skills-bar {
+    background-color: #E8630A;
+    width: 750px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  clip-path: polygon(5% 0, 100% 0, 100% 20%, 100% 80%, 100% 100%, 5% 100%, 0% 80%, 0% 20%);
+
+
+
+}
+
+.skills {
+    color:#001E6C;
+    height: 100%;
+    width: 25%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.skills h4 {
+    font-weight: 200;
+    font-size: 30px;
+}
+.skills svg {
+    color:#001E6C;
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 10px auto;
+}
+
+
+
+
+
+
+
+
+/************************************************* About me CONTAINER 4 **/
+#aboutMe-container4 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+
+#aboutMe-container4-CIRCLE-WRAP {
+    filter: drop-shadow(0px 0px 18px rgba(0, 0, 0, 0.65));
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin-right: 100px;
+
+}
+
+#aboutMe-container4-RECT {
+    background-image: url(BACKGROUNDS/IMG_2280.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+#seeMy-bttns {
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+
+
+    clip-path: polygon(0 0, 90% 0, 100% 20%, 100% 80%, 90% 100%, 0 100%, 0% 80%, 0% 20%);
+
+}
+
+
+#aboutMe-container4 button {
+    background-color: #FCD900;
+    cursor: pointer;
+    color:#001E6C;
+    font-family: 'Kanit', sans-serif;;
+    font-size: 25px;
+    font-weight: 700;
+    width: 200px;
+    height: 200px;
+    border: none;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+
+
+}
+/* #SeeMyPortfolio {
+    margin-right: 100px;
+}
+ */
+
+
+
+
+
+/* ################## ABOUT ME  #####################*/
+
+
+
+/* ################## CONTACT  #####################*/
+/* ################## CONTACT  #####################*/
+/* ################## CONTACT  #####################*/
+/* ################## CONTACT  #####################*/
+/* ################## CONTACT  #####################*/
+/* ################## CONTACT  #####################*/
+/* ################## CONTACT  #####################*/
+
+#contact {
+    background: url(BACKGROUNDS/bangkok.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+#contact-h2 {
+    color: #E8630A;
+    font-family: 'Alfa Slab One', serif;
+        font-size: 90px;
+    text-align: left;
+    /* padding-left: 100px; */
+      font-weight: 800;
+      background-color: transparent;
+
+}
+#contact h2 span {
+    color: white;
+    font-family: 'Alfa Slab One', serif;
+}
+
+
+/***************************************** Contact me CONTAINER 1 */
+#contact-container1 {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contact-links {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 20px;
+    bottom: 20px;
+  /*   border: 2px solid brown; */
+}
+
+#contact-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:#E8630A;
+    height: 100px;
+    width: 100px;
+    /* border: 2px solid brown; */
+}
+
+#contact-links a svg {
+    width: 80%;
+    height: 80%;
+}
+#contact-links a svg:hover,#contact-links a svg:active {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-out;
+}
+
+
+/* ******************** Container2 ********** FORM */
+
+#contact-container2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 250px;
+}
+
+
+#contact-form {
+    background-color: transparent;
+    color: #E8630A;
+    width: 1000px;
+}
+
+
+#contact-form h3 {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+#form-blocks {
+    display: flex;
+  width: 100%;
+    margin: 0 auto;
+}
+#form-block1  {
+    width: 30%;
+}
+#form-block2 {
+    width: 55%;
+}
+#form-block3 {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-inputs {
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+#contact-form input {
+    border: none;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+#contact-form textarea {
+    border: none;
+    height: 130px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+#name,#email {
+    display: block;
+    width: 100%;
+    height: 40px;
+}
+#contact-form label {
+    display: block;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+#message {
+    width: 100%;
+}
+
+ #submit {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: #FCD900;
+    color:#001E6C;
+    font-size: 20px; 
+    font-weight: bold;
+    box-shadow: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: circle(50% at 50% 50%);
+
+}
+
+#submit:hover,#submit:active {
+    width: 120px;
+    height: 120px;
+    transition: all 0.5s;
+}
+
+
+
+
+
+
+/* ################## CONTACT  #####################*/
+
+
+
+/* ################## FOOTER  #####################*/
+/* ################## FOOTER  #####################*/
+/* ################## FOOTER  #####################*/
+/* ################## FOOTER  #####################*/
+/* ################## FOOTER  #####################*/
+footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    font-weight: 200;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+footer p span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer a {
+    color:#FCD900;
+}
+.footer-items {
+    padding-right: 20px;
+}
+
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
