@@ -5,9 +5,9 @@
     font-family: 'Kanit', sans-serif;
 }
 
-/*  .getborder {
+ .getborder {
   border: 2px solid white; 
-}  */
+}
 
 main {
     background-color: #001E6C;
@@ -25,16 +25,6 @@ main {
 
 #aboutMe {
     width: 100%;
-/*     background-image: linear-gradient(
-        to bottom,
-        rgba(232, 99, 10, 0.8),
-        rgba(232, 99, 10, 0.8)
-      ), url("BACKGROUNDS/IMG_2280.jpg");
-      background-position: center;
-      overflow: hidden;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed; */
 }
 
 /********************************************************** About me CONTAINER 1 */
@@ -63,20 +53,18 @@ text-align: center;
     font-family: 'Alfa Slab One', serif;
 
 }
-#portrait-me-WRAP {
-    filter: drop-shadow(0px 0px 30px #000000);
-}
+
 
 #portrait-me {
     width: 500px;
     height: 500px;
     overflow: hidden;
-    clip-path: circle(50% at 50% 50%);
+    border-radius: 50%;
     background-color: #E8630A;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    box-shadow: rgba(255, 255, 255, 0.36) 0px 22px 70px 4px;
 
 }
 
@@ -486,3 +474,28 @@ footer a {
     clear: both;
     display: table;
   }
+
+
+
+
+
+
+
+@media only screen and (max-width: 1040px) {
+    #aboutMe-container1 {
+        flex-direction: column;
+        padding-top: 80px;
+    }
+    
+}
+
+@media only screen and (max-width: 730px) {
+    #aboutMe h2 {
+        font-size: 50px;
+        padding-bottom: 30px;
+    }
+    #portrait-me {
+        width: 350px;
+        height: 350px;
+    }
+}
