@@ -123,20 +123,9 @@ footer {
     h1 {
         font-weight: 800;
          font-size: 60px;
-         line-height: 0.6;
-         z-index: 3;
-         color: white;
-        /*  opacity: 0.8; */
-         text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
-     
-       
      }
      #software-developer {
          font-size: 30px;
-         font-weight: 100;
-         font-family: 'Kanit', sans-serif;
-         color: white;
-         text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
      }
     #intro-message {
        bottom: 140px;
@@ -145,4 +134,14 @@ footer {
        #intro-message p {
         font-size: 15px;
        }
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-weight: 800;
+         font-size: 45px;
+     }
+     #software-developer {
+        font-size: 25px;
+    }
 }
