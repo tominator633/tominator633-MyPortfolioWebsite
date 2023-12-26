@@ -4,9 +4,9 @@
     box-sizing: border-box;
     font-family: 'Kanit', sans-serif;
 }
-/*  .getborder {
+/*   .getborder {
   border: 2px solid white; 
-}  */
+}   */
 
 #navigation-button {
     display: block;
@@ -16,11 +16,14 @@
     right: 20px;
     width: 60px;
     height: 60px;
-    color: #FCD900;
+    color:#E8630A;
     border: none;
-    background-color: transparent;
+    background-color:#001E6C;
     cursor: pointer;
     z-index: 1000;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+
+
 }
 #navigation-button svg {
     width: 100%;
@@ -55,7 +58,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #E8630A;
+    color: white;
     font-size: 18px;
     font-family: 'Kanit', sans-serif;
     font-weight: 700;
@@ -99,7 +102,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #E8630A;
+    color: white;
     height: 40px;
     width: 40px;
 }
@@ -275,6 +278,21 @@ nav a:hover,nav a:active {
 }
 }
 
+@media only screen and (max-width: 810px) {
+
+    #navigation-button:hover,#navigation-button:active {
+        width: 60px;
+        height: 60px;
+        transition: none;
+    }
+    #navigation-close-button:hover,#navigation-close-button:active {
+        width: 60px;
+        height: 60px;
+        transition: none;
+    }
+}
+
+
 @media only screen and (max-width: 800px) {
     header {
         align-items: flex-start;
@@ -296,4 +314,6 @@ nav a:hover,nav a:active {
     font-size: 15px;
      transition: none;
 }
+
+
 }
