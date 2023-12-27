@@ -161,3 +161,10 @@ footer {
         font-size: 25px;
     }
 }
+
+/* NAVIGATION BUTTTON FOR INDEX.HTML ONLY*/
+@media only screen and (max-width: 810px) {
+    #navigation-button:hover,#navigation-button:active {
+    background-color: rgba(0,30,108,0.6);
+    }
+}
