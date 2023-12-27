@@ -4,11 +4,10 @@
     box-sizing: border-box;
     font-family: 'Kanit', sans-serif;
 }
-/* 
- .getborder {
+
+/*  .getborder {
   border: 2px solid white; 
-}  
- */
+}   */
 
 main {
 background-image: url(BACKGROUNDS/singapore.jpg);
@@ -40,26 +39,25 @@ height: 100svh;
 }
 
 #hey {
-    font-family: 'Alfa Slab One', serif;
     position: absolute;
-    top: 20px;
+    bottom: 330px;
+    left: 50%;
+    transform: translateX(-50%);
     height: 60px;
     font-size: 22px;
     font-weight: 400;
-    color: #E8630A;
-    background-color:#001E6C;
+    color: white;
+    background-color: transparent;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 240px;
-    padding-left: 10px;
-    clip-path: polygon(0 0, 95% 0, 100% 20%, 100% 80%, 95% 100%, 0 100%, 0% 80%, 0% 20%);
-
 }
 
 #Iam {
     font-size: 25px;
     font-weight: 100;
-    color: #E8630A;
+    color: white;
     padding-left: 5px;
 }
 
@@ -119,6 +117,9 @@ footer {
 
 
 @media only screen and (max-width: 810px) {
+    #hey {
+        bottom: 280px;
+    }
 
     h1 {
         font-weight: 800;
@@ -137,6 +138,13 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
+    #hey {
+        bottom: 260px;
+        font-size: 15px;
+    }
+    #Iam {
+        font-size: 15px;
+    }
     h1 {
         font-weight: 800;
          font-size: 45px;
