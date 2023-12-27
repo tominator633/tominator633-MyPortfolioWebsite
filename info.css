@@ -8,7 +8,10 @@
 /*  .getborder {
   border: 2px solid white; 
 }   */
-
+#navigation-button {
+    background-color: white;
+    color:#001E6C;
+}
 main {
     background-color: #001E6C;
 }

@@ -9,6 +9,14 @@
   border: 2px solid white; 
 }   */
 
+#navigation-button {
+    background-color:#001E6C;
+    color:#E8630A;
+}
+
+
+
+
 main {
 background-image: url(BACKGROUNDS/singapore.jpg);
  background-attachment: fixed;
