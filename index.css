@@ -9,10 +9,47 @@
   border: 2px solid white; 
 }   */
 
+
 #navigation-button {
     background-color:#001E6C;
     color:#E8630A;
+
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    position: absolute;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 50%;
 }
+
+#navigation-button svg {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#navigation-button:hover,#navigation-button:active {
+    width: 90px;
+    height: 90px;
+    transition: all 0.5s ease-out allow-discrete;
+}
+@media only screen and (max-width: 810px) {
+    #navigation-button:hover,#navigation-button:active {
+        width: 60px;
+        height: 60px;
+        transition: none;
+    }
+}
+
+
+
+
 #logo-button {
     display: block;
     position: absolute;
