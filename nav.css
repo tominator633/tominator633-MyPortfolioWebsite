@@ -302,7 +302,6 @@ nav a:hover,nav a:active {
     }
     nav a {
         width: 80%;
-
     }
     nav a:nth-child(2) {
         margin-left: 20%;
@@ -310,11 +309,11 @@ nav a:hover,nav a:active {
 }
 
 @media only screen and (max-width: 500px) {
+    nav a {
+        font-size: 25px;
+    }
     nav a:nth-child(1) {
         clip-path: polygon(0 0, 95% 0, 100% 17%, 100% 83%, 95% 100%, 0 100%, 0 85%, 0 15%);
-
-
-
     }
     nav a:nth-child(2) {
         clip-path: polygon(5% 0, 100% 0, 100% 15%, 100% 85%, 100% 100%, 5% 100%, 0 83%, 0 17%);
