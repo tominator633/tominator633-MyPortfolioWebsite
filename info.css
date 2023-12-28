@@ -5,10 +5,9 @@
     font-family: 'Kanit', sans-serif;
 }
 
-/*   .getborder {
+/*  .getborder {
   border: 2px solid white; 
-}    */
-
+}   */
 
 /* ################ NAV BUTTON ################### */
 /* ################ NAV BUTTON ################### */
@@ -128,26 +127,29 @@ text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 100px;
 }
 #aboutMe-article {
-    width: 60%;
+    width: 50%;
     padding:40px;
     background-color: transparent;
-    margin-top: -120px;
+    margin-top: -300px;
 }
 #aboutMe-article p {
     font-size: 20px;
    color: white;
    font-weight: 400;
-   text-align: center;
+   text-align: left;
 }
 #castle {
-    height: 200px;
-    width: 40%;
-    background-color: #FCD900;
+    height: 100%;
+    width: 50%;
+    background-color: transparent;
+    margin-bottom: -50px;
 }
-
+#castle img {
+    width: 100%;
+    height: auto;
+}
 /************************************************* About me CONTAINER 3 **/
 #aboutMe-container3 {
     width: 100%;
