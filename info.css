@@ -102,13 +102,12 @@ text-align: center;
 
 }
 
-
 #portrait-me {
     width: 500px;
     height: 500px;
     overflow: hidden;
     border-radius: 50%;
-    background-color: #E8630A;
+    background-color:#E8630A;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +118,7 @@ text-align: center;
 #portrait-me img {
     display: block;
     height: auto;
-    width: 80%;
+    width: 70%;
 }
 
 /********************************************************* About me CONTAINER 2 **/
