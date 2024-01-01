@@ -5,9 +5,9 @@
     font-family: 'Kanit', sans-serif;
 }
 
- .getborder {
+/*  .getborder {
   border: 2px solid white; 
-}  
+} */
 
 /* ################ NAV BUTTON ################### */
 /* ################ NAV BUTTON ################### */
@@ -68,13 +68,14 @@ main {
 /* ################## CATALOGUE  #####################*/
 /* ################## CATALOGUE  #####################*/
 h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
     color: #E8630A;
     font-family: 'Alfa Slab One', serif;
     font-size: 40px;
     text-align: left;
     font-weight: 400;
-    padding-top: 20px;
-    padding-left: 20px;
 }
 h1 span {
     color: white;
@@ -84,28 +85,64 @@ h1 span {
     width: 100%;
 }
 
-/********************************************************** About me CONTAINER 1 */
+/********************************************************** catalogue CONTAINER 1 */
 #catalogue-container1 {
     width: 100%;
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
-#selectProject {
-    width: 50%;
-    height: 400px;
-    background-color: yellowgreen;
+#selectProjectBox {
+/*     margin-left: 30px;
+    width: 800px;
+    height: 450px;  */
+    margin-top: 130px;
+
 }
+#projects-filters {
+    width: 100%;
+    height: 60px;
+}
+#projects-filters p {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+#projects-icons {
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-rows: repeat(3, 120px);
+    grid-template-columns: repeat(5, 120px);
+    gap: 6px 6px;
+}
+#projects-icons button {
+    background-color: red;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    clip-path: polygon(15% 1%, 85% 0, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0 85%, 0 15%);
 
-
+}
+#projects-icons button img {
+    width: 100%;
+    height: auto;
+}
+#supalex-design {
+    grid-area: 1/1/3/3;
+}
 #project-image {
-    margin-right: 30px;
+    margin-top: 20px;
     width: 450px;
     height: 450px;
     overflow: hidden;
     border-radius: 50%;
-    background-color:#E8630A;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,7 +153,7 @@ h1 span {
 #project-image img {
     display: block;
     height: auto;
-    width: 70%;
+    width: 100%;
 }
 
 /********************************************************* About me CONTAINER 2 **/
@@ -127,10 +164,7 @@ h1 span {
     align-items: center;
     justify-content: space-between;
 }
-#catalogue-container2 {
-    display: flex;
-    align-items: center;
-}
+
 #project-description {
     width: 50%;
     height: 100%;
@@ -141,6 +175,6 @@ h1 span {
 }
 #project-description p {
     width: 90%;
-    height: 90%;
+    height: 80%;
     color: white;
 }
