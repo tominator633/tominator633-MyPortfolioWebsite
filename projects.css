@@ -5,9 +5,9 @@
     font-family: 'Kanit', sans-serif;
 }
 
-.getborder {
+/* .getborder {
   border: 2px solid white; 
-} 
+}  */
 
 /* ################ NAV BUTTON ################### */
 /* ################ NAV BUTTON ################### */
@@ -44,8 +44,6 @@
 }
 @media only screen and (max-width: 810px) {
     #navigation-button {
-        top: 10px;
-        right: 10px;
         width: 50px;
         height: 50px;
     }
