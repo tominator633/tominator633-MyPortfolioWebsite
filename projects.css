@@ -5,9 +5,9 @@
     font-family: 'Kanit', sans-serif;
 }
 
-/* .getborder {
+.getborder {
   border: 2px solid white; 
-}  */
+} 
 
 /* ################ NAV BUTTON ################### */
 /* ################ NAV BUTTON ################### */
@@ -83,7 +83,6 @@ h1 span {
 }
 #catalogue {
     width: 100%;
-    height: 100vh;
     display: flex;
 }
 
@@ -92,14 +91,10 @@ h1 span {
     width: 50%;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
 }
 #selectProjectBox {
-/*     margin-left: 30px;
-    width: 800px;
-    height: 450px;  */
     margin-top: 130px;
-
 }
 #projects-filters {
     width: 100%;
@@ -160,7 +155,6 @@ h1 span {
     align-items: center;
     justify-content: center;
     box-shadow: rgba(255, 255, 255, 0.36) 0px 22px 70px 4px;
-
 }
 
 #project-image img {
@@ -190,22 +184,12 @@ h1 span {
     text-decoration: none;
     text-align: right;
 }
-#project-year {
 
-}
 #project-published {
-
     text-align: center;
 }
 #project-tools {
     text-align: center;
-}
-#project-links {
-
-}
-#project-links a {
-    
-
 }
 
 
@@ -220,4 +204,31 @@ h1 span {
     width: 90%;
     height: 100%;
     color: white;
+}
+
+
+
+
+@media only screen and (max-width: 1355px) {
+    #projects-icons {
+        grid-template-rows: repeat(3, 80px);
+        grid-template-columns: repeat(5, 80px);
+        gap: 6px 6px;
+    }
+}
+@media only screen and (max-width: 930px) {
+    #catalogue {
+        flex-direction: column;
+    }
+    #catalogue-container1 {
+        width: 100%;
+    }
+    #catalogue-container2 {
+        width: 100%;
+    }
+    #project-image {
+        margin-top: 30px;
+        width: 380px;
+        height: 380px;
+    }
 }
