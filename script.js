@@ -44,5 +44,16 @@ function hideLanguageOptions () {
 languageOptions.addEventListener("mouseleave", hideLanguageOptions);
 /* important to use mouseleave */
 
+
 /* ############### Language options NAV ############# */
 
+
+/* MY PROJECTS PREVIEWS */
+/* first one */
+
+const supalexDesign = document.querySelector("#supalex-design");
+const projectPreviewImage = document.getElementById("project-preview-image");
+function showProjectPreview () {
+projectPreviewImage.style.backgroundColor = "red";
+}
+supalexDesign.addEventListener("mouseover", showProjectPreview);
