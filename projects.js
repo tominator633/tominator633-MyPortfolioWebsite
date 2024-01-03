@@ -1,10 +1,16 @@
 
 /* MY PROJECTS PREVIEWS */
 /* first one */
+let projectPreviewImage = document.getElementById("project-preview-image");
 
 let supalexDesign = document.getElementById("supalex-design");
-let projectPreviewImage = document.getElementById("project-preview-image");
-function showProjectPreview () {
+function showSupalexDesign () {
 projectPreviewImage.style.backgroundImage = "url(PROJECTS/Supalex-design/supalex-design-preview.png)";
 }
-supalexDesign.addEventListener("mouseover", showProjectPreview);
+supalexDesign.addEventListener("click", showSupalexDesign);
+
+let kurisPalace = document.getElementById("kuris-palace");
+function showKurisPalace () {
+projectPreviewImage.style.backgroundImage = "url(PROJECTS/Kuris-palace/kuris-palace-ICON.png)";
+}
+kurisPalace.addEventListener("click", showKurisPalace);
