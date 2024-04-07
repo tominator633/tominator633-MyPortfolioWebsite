@@ -7,11 +7,11 @@
 
 /*  .getborder {
   border: 2px solid white; 
-}   */
-
+}  
+ */
 
 #navigation-button {
-    background-color:#001E6C;
+    background-color:#333;
     color:#E8630A;
 
     display: flex;
@@ -93,7 +93,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: white;
+    color: #E8630A;
     font-size: 18px;
     font-family: 'Kanit', sans-serif;
     font-weight: 700;
@@ -170,7 +170,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: white;
+    color: #E8630A;
     height: 40px;
     width: 40px;
 }
@@ -193,8 +193,6 @@
 
 
 
-
-
 main {
 background-image: url(BACKGROUNDS/singapore.jpg);
  background-attachment: fixed;
@@ -208,7 +206,29 @@ height: 100svh;
 
 }
 
+#portrait-me {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+/*     box-shadow: rgba(255, 255, 255, 0.36) 0px 22px 70px 4px; */
+    position: absolute;
+    bottom: 380px;
+    left: 50%;
+    transform: translateX(-50%);
 
+}
+
+#portrait-me img {
+    display: block;
+    height: auto;
+    width: 70%;
+}
 
 
 
@@ -252,12 +272,11 @@ h1 {
     font-size: 100px;
     line-height: 0.6;
     z-index: 3;
-    color: white;
-   /*  opacity: 0.8; */
-/*     text-shadow: 2px 3px 5px rgba(255,255,255,0.5); */
+   color: #cc6840;
 
   
 }
+
 #software-developer {
     font-size: 50px;
     font-weight: 100;

@@ -7,8 +7,8 @@
 
 /*  .getborder {
   border: 2px solid white; 
-}   */
-
+}  
+ */
 /* ################ NAV BUTTON ################### */
 /* ################ NAV BUTTON ################### */
 /* ################ NAV BUTTON ################### */
@@ -56,7 +56,14 @@
 /* ############################################################# */
 
 main {
-    background-color: #001E6C;
+    background-image: url(BACKGROUNDS/singapore.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
 }
 
 /* ################## ABOUT ME  #####################*/
@@ -77,39 +84,41 @@ main {
 #aboutMe-container1 {
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: flex-start;
+    justify-content: space-between;
     padding-top: 30px;
-    padding-bottom: 30px;
 
 }
 
 #aboutMe h2 {
-    color: #E8630A;
+    color: #333;
 font-family: 'Alfa Slab One', serif;
-    font-size: 90px;
+    font-size: 40px;
 /*     width: 360px; */
 text-align: center;
   font-weight: 800;
+  margin-left: 30px;
 
 }
 
 #aboutMe h2 span {
-    color: white;
+    color: #333;
     font-family: 'Alfa Slab One', serif;
 
 }
 
 #portrait-me {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
-    border-radius: 50%;
-    background-color:#E8630A;
+    background-color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: rgba(255, 255, 255, 0.36) 0px 22px 70px 4px;
+/*   box-shadow: rgba(255, 255, 255, 0.36) 0px 22px 70px 4px; */
+
+    clip-path: polygon(20% 0, 100% 0, 100% 35%, 100% 74%, 100% 100%, 20% 100%, 0% 80%, 0% 20%);
+
 
 }
 
@@ -127,9 +136,11 @@ text-align: center;
 }
 #aboutMe-article {
     width: 50%;
-    padding:40px;
-    background-color: transparent;
-    margin-top: -300px;
+    padding:30px;
+    background-color: #333;
+    clip-path: polygon(0 0, 90% 0, 100% 20%, 100% 80%, 90% 100%, 0 100%, 0% 80%, 0% 20%);
+
+    margin-top: -200px;
 }
 #aboutMe-article p {
     font-size: 20px;
@@ -137,16 +148,39 @@ text-align: center;
    font-weight: 400;
    text-align: left;
 }
-#castle {
+
+#skills-bar {
+    background-color: #333;
+    width: 750px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  clip-path: polygon(5% 0, 100% 0, 100% 20%, 100% 80%, 100% 100%, 5% 100%, 0% 80%, 0% 20%);
+  margin-bottom: -400px;
+}
+
+.skills {
+    color: #E8630A;
     height: 100%;
-    width: 50%;
-    background-color: transparent;
-    margin-bottom: -50px;
+    width: 25%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-#castle img {
-    width: 100%;
-    height: auto;
+
+.skills h4 {
+    font-weight: 200;
+    font-size: 20px;
 }
+.skills svg {
+    color: #E8630A;
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 10px auto;
+}
+
+
 /************************************************* About me CONTAINER 3 **/
 #aboutMe-container3 {
     width: 100%;
@@ -155,7 +189,7 @@ text-align: center;
     justify-content: space-between;
 }
 
-#skills-headline {
+/* #skills-headline {
     width: 360px;
     font-family: 'Alfa Slab One', serif;
     font-weight: 200;
@@ -169,39 +203,9 @@ text-align: center;
     font-family: 'Alfa Slab One', serif;
     font-weight: 200;
     color: white;
-}
+} */
 
 
-#skills-bar {
-    background-color: #E8630A;
-    width: 750px;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  clip-path: polygon(5% 0, 100% 0, 100% 20%, 100% 80%, 100% 100%, 5% 100%, 0% 80%, 0% 20%);
-
-}
-
-.skills {
-    color:#001E6C;
-    height: 100%;
-    width: 25%;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.skills h4 {
-    font-weight: 200;
-    font-size: 30px;
-}
-.skills svg {
-    color:#001E6C;
-    width: 40px;
-    height: 40px;
-    display: block;
-    margin: 10px auto;
-}
 
 
 
@@ -276,6 +280,36 @@ text-align: center;
  */
 
 
+ .socials {
+    width: 150px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #E8630A;
+    height: 40px;
+    width: 40px;
+}
+
+.socials a svg {
+    width: 80%;
+    height: 80%;
+}
+.socials a svg:hover,#socials a svg:active {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-out;
+}
 
 
 
