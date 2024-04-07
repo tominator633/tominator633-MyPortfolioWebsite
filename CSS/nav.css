@@ -5,16 +5,16 @@
     font-family: 'Kanit', sans-serif;
 }
 
-/*   .getborder {
+/*    .getborder {
   border: 2px solid white; 
-}  */
- 
+} 
+  */
 /* ################## NAV STRUCTURE ############ */
 /* ################## NAV STRUCTURE ############ */
 /* ################## NAV STRUCTURE ############ */
 /* ################## NAV STRUCTURE ############ */
 /* ################## NAV STRUCTURE ############ */
-header {
+#mobileNav {
     width: 100%;
     height: 100vh;
     height: 100svh;
@@ -61,14 +61,14 @@ nav {
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
-    height: 500px;
+    height: 600px;
    
 }
 
 nav a {
     display: flex;
     width: 60%;
-    height: 25%;
+    height: 20%;
     text-decoration: none;
     font-family: 'Alfa Slab One', serif;
     text-align: center;
@@ -107,6 +107,14 @@ nav a:nth-child(3) {
     clip-path: polygon(0 0, 97% 0, 100% 15%, 100% 85%, 97% 100%, 0 100%, 0% 80%, 0% 20%);
 }
 
+nav a:nth-child(4) {
+    margin-left: 40%;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 30px;
+    clip-path: polygon(3% 0, 100% 0, 100% 15%, 100% 85%, 100% 100%, 3% 100%, 0 85%, 0 15%);
+
+}
 nav a:hover,nav a:active {
     font-size: 25px;
      transition: font-size 0.5s ease;
@@ -204,9 +212,9 @@ nav a:hover,nav a:active {
     nav a {
         width: 80%;
     }
-    nav a:nth-child(2) {
+/*     nav a:nth-child(2) {
         margin-left: 20%;
-    }
+    } */
     #navigation-close-button:hover,#navigation-close-button:active {
         width: 60px;
         height: 60px;
@@ -226,7 +234,9 @@ nav a:hover,nav a:active {
     }
     nav a:nth-child(3) {
         clip-path: polygon(0 0, 95% 0, 100% 17%, 100% 83%, 95% 100%, 0 100%, 0 85%, 0 15%);
-
+    }
+    nav a:nth-child(4) {
+        clip-path: polygon(5% 0, 100% 0, 100% 15%, 100% 85%, 100% 100%, 5% 100%, 0 83%, 0 17%);
     }
 }
 

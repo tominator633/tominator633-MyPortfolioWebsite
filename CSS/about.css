@@ -5,43 +5,11 @@
     font-family: 'Kanit', sans-serif;
 }
 
-/*  .getborder {
+/*    .getborder {
   border: 2px solid white; 
 }  
  */
-/* ################ NAV BUTTON ################### */
-/* ################ NAV BUTTON ################### */
-/* ################ NAV BUTTON ################### */
-/* ################ NAV BUTTON ################### */
-/* ################ NAV BUTTON ################### */
-#navigation-button {
-    background-color: white;
-    color:#001E6C;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    display: flex;
-    align-items: center;
-    justify-content:center ;
-    position: absolute;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    border: none;
-    cursor: pointer;
-    z-index: 1000;
-    border-radius: 50%;
-}
-#navigation-button svg {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-#navigation-button:hover,#navigation-button:active {
-    width: 90px;
-    height: 90px;
-    transition: all 0.5s ease-out allow-discrete;
-}
+
 @media only screen and (max-width: 810px) {
     #navigation-button {
         width: 50px;
@@ -55,8 +23,8 @@
 }
 /* ############################################################# */
 
-main {
-    background-image: url(BACKGROUNDS/singapore.jpg);
+body {
+    background-image: url(/BACKGROUNDS/singapore.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -66,27 +34,49 @@ main {
     height: 100svh;
 }
 
-/* ################## ABOUT ME  #####################*/
-/* ################## ABOUT ME  #####################*/
-/* ################## ABOUT ME  #####################*/
-/* ################## ABOUT ME  #####################*/
-/* ################## ABOUT ME  #####################*/
-/* ################## ABOUT ME  #####################*/
-/* ################## ABOUT ME  #####################*/
-/* ################## ABOUT ME  #####################*/
 
-
-#aboutMe {
+header {
     width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 30px;
 }
+#contact-h2 {
+    color: #333;
+    font-family: 'Alfa Slab One', serif;
+    font-size: 40px;
+    font-weight: 800;
+
+}
+
+
+#navigation-button {
+    background-color: #333;
+    color: #E8630A;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+#navigation-button svg {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
 
 /********************************************************** About me CONTAINER 1 */
 #aboutMe-container1 {
     width: 100%;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding-top: 30px;
+    justify-content: flex-end;
 
 }
 
@@ -317,227 +307,6 @@ text-align: center;
 
 
 
-/* ################## CONTACT  #####################*/
-/* ################## CONTACT  #####################*/
-/* ################## CONTACT  #####################*/
-/* ################## CONTACT  #####################*/
-/* ################## CONTACT  #####################*/
-/* ################## CONTACT  #####################*/
-/* ################## CONTACT  #####################*/
-
-#contact {
-    background: url(BACKGROUNDS/bangkok.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-
-#contact-h2 {
-    color: #E8630A;
-    font-family: 'Alfa Slab One', serif;
-        font-size: 90px;
-    text-align: left;
-    /* padding-left: 100px; */
-      font-weight: 800;
-      background-color: transparent;
-
-}
-#contact h2 span {
-    color: white;
-    font-family: 'Alfa Slab One', serif;
-}
-
-
-/***************************************** Contact me CONTAINER 1 */
-#contact-container1 {
-    width: 100%;
-    height: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#contact-links {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    left: 20px;
-    bottom: 20px;
-  /*   border: 2px solid brown; */
-}
-
-#contact-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color:#E8630A;
-    height: 100px;
-    width: 100px;
-    /* border: 2px solid brown; */
-}
-
-#contact-links a svg {
-    width: 80%;
-    height: 80%;
-}
-#contact-links a svg:hover,#contact-links a svg:active {
-    width: 100%;
-    height: 100%;
-    transition: all 0.3s ease-out;
-}
-
-
-/* ******************** Container2 ********** FORM */
-
-#contact-container2 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding-bottom: 250px;
-}
-
-
-#contact-form {
-    background-color: transparent;
-    color: #E8630A;
-    width: 1000px;
-}
-
-
-#contact-form h3 {
-    color: white;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: center;
-    font-size: 35px;
-    font-weight: 400;
-}
-
-#form-blocks {
-    display: flex;
-  width: 100%;
-    margin: 0 auto;
-}
-#form-block1  {
-    width: 30%;
-}
-#form-block2 {
-    width: 55%;
-}
-#form-block3 {
-    width: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.form-inputs {
-    max-width: 90%;
-    margin: 20px auto;
-}
-
-#contact-form input {
-    border: none;
-    padding-left: 20px;
-}
-
-#contact-form textarea {
-    border: none;
-    height: 130px;
-    padding-left: 20px;
-    padding-top: 20px;
-    border-radius: 10px;
-}
-
-#name,#email {
-    display: block;
-    width: 100%;
-    height: 40px;
-    border-radius: 10px;
-}
-#contact-form label {
-    display: block;
-    padding-bottom: 5px;
-    font-weight: bold;
-}
-#message {
-    width: 100%;
-}
-
- #submit {
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    background-color: #FCD900;
-    color:#001E6C;
-    font-size: 20px; 
-    font-weight: bold;
-    box-shadow: none;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    padding-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-}
-
-#submit:hover,#submit:active {
-    width: 120px;
-    height: 120px;
-    transition: all 0.5s;
-}
-/* ###############################################################*/
-
-
-
-/* ################## FOOTER  #####################*/
-/* ################## FOOTER  #####################*/
-/* ################## FOOTER  #####################*/
-/* ################## FOOTER  #####################*/
-/* ################## FOOTER  #####################*/
-footer {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    color: white;
-    font-weight: 200;
-    font-size: 12px;
-    padding-bottom: 5px;
-}
-
-footer p span {
-    font-family: Arial, Helvetica, sans-serif;
-}
-footer a {
-    color:#FCD900;
-}
-.footer-items {
-    padding-right: 20px;
-}
-@media only screen and (max-width: 500px) {
-footer p {
-    padding-left: 5px;
-}
-}
-/* ###########################################################*/
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-
 /* ###################### QUERIES ################# *//* ###################### QUERIES ################# */
 /* ###################### QUERIES ################# *//* ###################### QUERIES ################# */
 /* ###################### QUERIES ################# *//* ###################### QUERIES ################# */
@@ -664,59 +433,4 @@ footer p {
    
 }
 
-/*QUERIES*************** contact ************/
-@media only screen and (max-width: 1015px) {
-    #contact-container1 {
-        flex-direction: column;
-    }
-    
-    #contact-links {
-        width: 100%;
-    }
-    #form-block3 {
-        width: 150px;
-        flex-shrink: 0;
-    }
-}
-@media only screen and (max-width: 730px) {
-    #contact-container1 {
-        height: 200px;
-    }
-    #contact-h2 {
-        font-size: 50px;
-        width: 100%;
-        text-align: center;
-    }
-    #contact-links a {
-        height: 60px;
-        width: 60px;
-    }
-    #form-blocks {
-        flex-direction: column;
-      width: 90%;
-    }
-    #form-block1  {
-        width: 100%;
-    }
-    #form-block2 {
-        width: 100%;
-    }
-    #form-block3 {
-        width: 100%;
-        height: 150px;
-    }
-    #submit:hover,#submit:active {
-        width: 100px;
-        height: 100px;
-        transition: none;
-    }
-    #contact-form h3 {
-        font-size: 25px;
-        padding-top: 50px;
-    }
-    #contact-links a svg:hover,#contact-links a svg:active {
-        width: 80%;
-        height: 80%;
-        transition: none;
-    }
-}
+
