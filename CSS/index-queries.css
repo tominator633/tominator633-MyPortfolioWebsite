@@ -1,0 +1,112 @@
+@media only screen and (max-width: 810px) {
+    #navigation-button:hover,#navigation-button:active {
+        width: 60px;
+        height: 60px;
+        transition: none;
+    }
+}
+
+
+@media only screen and (max-width: 810px) {
+    #portrait-me {
+        bottom: 330px;
+    }
+    #hey {
+        bottom: 280px;
+    }
+
+    h1 {
+        font-weight: 800;
+         font-size: 60px;
+     }
+     #software-developer {
+         font-size: 30px;
+     }
+    #intro-message {
+       bottom: 40px;
+        width: 250px;
+       }
+       #intro-message p {
+        font-size: 15px;
+       }
+       #navDesktop ul {
+        width: 450px;
+        height: 40px;
+    }
+    #navDesktop ul li a  {
+        font-size: 16px;
+    }
+    #navDesktop ul li a:hover {
+        font-size: 19px;
+        transition: all 0.5s;
+    }
+}
+
+/* @media only screen and (max-width: 640px) {
+
+    #mobileNavBtn {
+        display: flex;
+        background-color:#333;
+        color:#E8630A;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        width: 90px;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        z-index: 1000;
+        border-radius: 50px;
+        box-shadow: 0px 0px 26px -5px rgba(232,99,10,1);
+    }
+    
+    #mobileNavBtn svg {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    #intro-message {
+        transform: none;
+        left: 10px;
+        }
+    #language-options {
+        display: none;
+    }
+}
+ */
+
+@media only screen and (max-width: 500px) {
+    #portrait-me {
+        bottom: 300px;
+    }
+    #hey {
+        bottom: 250px;
+        font-size: 15px;
+    }
+    #Iam {
+        font-size: 15px;
+    }
+    h1 {
+        font-weight: 800;
+         font-size: 45px;
+     }
+     #software-developer {
+        font-size: 25px;
+    }
+    #navDesktop ul {
+        width: 300px;
+        height: 40px;
+    }
+    #navDesktop ul li a  {
+        font-size: 12px;
+    }
+    #navDesktop ul li a:hover {
+        font-size: 12px;
+        transition: none;
+    }
+
+}
+
+

@@ -55,7 +55,7 @@
 }
 
 
-nav {
+#mobileNav nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -65,7 +65,7 @@ nav {
    
 }
 
-nav a {
+#mobileNav nav a {
     display: flex;
     width: 60%;
     height: 20%;
@@ -77,12 +77,12 @@ nav a {
     background-color: #333;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-nav a span {
+#mobileNav nav a span {
     color: white;
     font-family: 'Alfa Slab One', serif;
 }
 
-nav a:nth-child(1) {
+#mobileNav nav a:nth-child(1) {
     margin-left: 0px;
     align-items: center;
     justify-content: flex-end;
@@ -90,7 +90,7 @@ nav a:nth-child(1) {
     clip-path: polygon(0 0, 97% 0, 100% 15%, 100% 85%, 97% 100%, 0 100%, 0% 80%, 0% 20%);
 
 }
-nav a:nth-child(2) {
+#mobileNav nav a:nth-child(2) {
     margin-left: 40%;
     align-items: center;
     justify-content: flex-start;
@@ -99,7 +99,7 @@ nav a:nth-child(2) {
 
 }
 
-nav a:nth-child(3) {
+#mobileNav nav a:nth-child(3) {
     margin-left: 0px;
     align-items: center;
     justify-content: flex-end;
@@ -107,7 +107,7 @@ nav a:nth-child(3) {
     clip-path: polygon(0 0, 97% 0, 100% 15%, 100% 85%, 97% 100%, 0 100%, 0% 80%, 0% 20%);
 }
 
-nav a:nth-child(4) {
+#mobileNav nav a:nth-child(4) {
     margin-left: 40%;
     align-items: center;
     justify-content: flex-start;
@@ -115,7 +115,7 @@ nav a:nth-child(4) {
     clip-path: polygon(3% 0, 100% 0, 100% 15%, 100% 85%, 100% 100%, 3% 100%, 0 85%, 0 15%);
 
 }
-nav a:hover,nav a:active {
+#mobileNav nav a:hover,#mobileNav nav a:active {
     font-size: 25px;
      transition: font-size 0.5s ease;
 }
@@ -241,3 +241,136 @@ nav a:hover,nav a:active {
 }
 
 
+
+
+
+
+/*********************FOOTER **/
+/*********************FOOTER **/
+/*********************FOOTER **/
+/*********************FOOTER **/
+/*********************FOOTER **/
+/*********************FOOTER **/
+
+footer {
+    width: 100%;
+    height: 300px;
+    border-top: 1px solid #555;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #E8630A;
+}
+footer a {
+    text-decoration: none;
+    color: #E8630A;
+    display: block;
+}
+#footerLogo figure {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+#footerLogo figure img {
+    width: 100%;
+    height: auto;
+}
+#footerLogo p {
+    color: #999;
+    font-size: 12px;
+    margin-top: 10px;
+}
+#footerLogo p span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#footerLogo a:hover,#footerLogo a:active {
+    color: #F89D60;
+    transition: all 0.5s;
+}
+#footerNav a {
+    margin-bottom: 10px;
+    font-size: 20px;
+
+}
+#footerNav a:hover,#footerNav a:active {
+    color: #F89D60;
+    transition: all 0.5s;
+}
+.socials {
+    width: 150px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #E8630A;
+    height: 40px;
+    width: 40px;
+}
+
+.socials a svg {
+    width: 80%;
+    height: 80%;
+}
+.socials a svg:hover,#socials a svg:active {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-out;
+}
+#mobileCopyright {
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    #footerLogo p {
+        display: none;
+    }
+    footer {
+        flex-wrap: wrap;
+    }
+    #footerLogo {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    #footerLogo figure {
+        width: 60px;
+        height: 60px;
+    }
+    #footerLogo a {
+        font-size: 12px;
+        padding-bottom: 7px;
+    }
+    #footerNav {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    #footerNav a {
+        font-size: 15px;
+    }
+    #footerContact {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #mobileCopyright {
+        display: block;
+        color: #999;
+        font-size: 10px;
+    }
+    #mobileCopyright span {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}

@@ -5,69 +5,14 @@
     font-family: 'Kanit', sans-serif;
 }
 
-/*  .getborder {
+/*     .getborder {
   border: 2px solid white; 
 }  
  */
 
-#navigation-button {
-    background-color:#333;
-    color:#E8630A;
-
-    display: flex;
-    align-items: center;
-    justify-content:center ;
-    position: absolute;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    border: none;
-    cursor: pointer;
-    z-index: 1000;
-    border-radius: 50%;
+#mobileNavBtn {
+    display: none;
 }
-
-#navigation-button svg {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-#navigation-button:hover,#navigation-button:active {
-    width: 90px;
-    height: 90px;
-    transition: all 0.5s ease-out allow-discrete;
-}
-@media only screen and (max-width: 810px) {
-    #navigation-button:hover,#navigation-button:active {
-        width: 60px;
-        height: 60px;
-        transition: none;
-    }
-}
-
-
-
-
-#logo-button {
-    display: block;
-    position: absolute;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 60px;
-    height: 60px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-#logo-button img {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-
 
 
 /* ########################### LANGUAGE WEBSITE ############ */
@@ -154,42 +99,12 @@
 /* ########################### END LANGUAGE WEBSITE ############ */
 
 
-.socials {
-    width: 150px;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    left: 20px;
-    bottom: 20px;
-}
-
-.socials a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #E8630A;
-    height: 40px;
-    width: 40px;
-}
-
-.socials a svg {
-    width: 80%;
-    height: 80%;
-}
-.socials a svg:hover,#socials a svg:active {
-    width: 100%;
-    height: 100%;
-    transition: all 0.3s ease-out;
-}
 
 
 
 main {
 background-image: url(/BACKGROUNDS/singapore.jpg);
- background-attachment: fixed;
+/*  background-attachment: fixed; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -266,7 +181,7 @@ h1 {
     font-size: 100px;
     line-height: 0.6;
     z-index: 3;
-   color: #cc6840;
+   color: white;
 
   
 }
@@ -300,68 +215,51 @@ h1 {
 
 
 
-
-
-
-
-footer {
+#navDesktop {
     width: 100%;
-    height: 400px;
-    background-color: rgba(238, 237, 237, 0.8);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    bottom: 120px;
+    transform: translateX(-50%);
+
+}
+#navDesktop ul {
+    width: 600px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #333;
+    border-radius: 50px;
+    box-shadow: 0px 0px 26px -5px rgba(232,99,10,1);
 }
 
-
-
-
-
-
-@media only screen and (max-width: 810px) {
-    #hey {
-        bottom: 280px;
-    }
-
-    h1 {
-        font-weight: 800;
-         font-size: 60px;
-     }
-     #software-developer {
-         font-size: 30px;
-     }
-    #intro-message {
-       bottom: 140px;
-        width: 100%;
-       }
-       #intro-message p {
-        font-size: 15px;
-       }
+#navDesktop ul li {
+    list-style-type: none;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navDesktop ul li a {
+    color: #E8630A;
+    text-decoration: none;
+  /*   font-family: 'Alfa Slab One', serif; */
+    font-weight: 700;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media only screen and (max-width: 500px) {
-    #hey {
-        bottom: 260px;
-        font-size: 15px;
-    }
-    #Iam {
-        font-size: 15px;
-    }
-    h1 {
-        font-weight: 800;
-         font-size: 45px;
-     }
-     #software-developer {
-        font-size: 25px;
-    }
-    #language-options {
-        display: none;
-    }
-    #index-mobile-language-options {
-        display: flex;
-    }
-}
-
-/* NAVIGATION BUTTTON FOR INDEX.HTML ONLY*/
-@media only screen and (max-width: 810px) {
-    #navigation-button:hover,#navigation-button:active {
-    background-color: rgba(0,30,108,0.6);
-    }
+#navDesktop ul li a:hover {
+    font-size: 25px;
+    transition: all 0.5s;
 }

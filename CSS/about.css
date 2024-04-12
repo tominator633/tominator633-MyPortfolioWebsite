@@ -5,11 +5,10 @@
     font-family: 'Kanit', sans-serif;
 }
 
-/*    .getborder {
+/*   .getborder {
   border: 2px solid white; 
 }  
  */
-
 @media only screen and (max-width: 810px) {
     #navigation-button {
         width: 50px;
@@ -25,7 +24,7 @@
 
 body {
     background-image: url(/BACKGROUNDS/singapore.jpg);
-    background-attachment: fixed;
+/*     background-attachment: fixed; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -39,6 +38,7 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding-left: 30px;
     padding-top: 30px;
 }
@@ -49,13 +49,58 @@ header {
     font-weight: 800;
 
 }
+#navDesktop {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/*     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35px; */
 
+}
+#navDesktop ul {
+    width: 350px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50px;
+}
+
+#navDesktop ul li {
+    list-style-type: none;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navDesktop ul li a {
+   color: #FAB180;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 22px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navDesktop ul li a:hover {
+    font-size: 25px;
+    transition: all 0.5s;
+}
 
 #navigation-button {
     background-color: #333;
     color: #E8630A;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content:center;
     width: 50px;
@@ -76,39 +121,26 @@ header {
 #aboutMe-container1 {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    height: 450px;
 
 }
 
-#aboutMe h2 {
-    color: #333;
-font-family: 'Alfa Slab One', serif;
-    font-size: 40px;
-/*     width: 360px; */
-text-align: center;
-  font-weight: 800;
-  margin-left: 30px;
-
-}
-
-#aboutMe h2 span {
-    color: #333;
-    font-family: 'Alfa Slab One', serif;
-
-}
 
 #portrait-me {
-    width: 300px;
-    height: 300px;
+    width: 450px;
+    height: 450px;
     overflow: hidden;
-    background-color: #333;
+  /*   background-color: #333; */
+
     display: flex;
     align-items: center;
     justify-content: center;
+ /*    border-radius: 50%; */
 /*   box-shadow: rgba(255, 255, 255, 0.36) 0px 22px 70px 4px; */
 
-    clip-path: polygon(20% 0, 100% 0, 100% 35%, 100% 74%, 100% 100%, 20% 100%, 0% 80%, 0% 20%);
-
+/*     clip-path: polygon(20% 0, 100% 0, 100% 35%, 100% 74%, 100% 100%, 20% 100%, 0% 80%, 0% 20%);
+ */
 
 }
 
@@ -117,20 +149,56 @@ text-align: center;
     height: auto;
     width: 70%;
 }
+#aboutMeBtns {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#resumeLink,#portfolioLink {
+    width: 140px;
+    height: 40px;
+    background-color: white;
+    color: #E8630A;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+
+}
+
+
+
 
 /********************************************************* About me CONTAINER 2 **/
 #aboutMe-container2 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+  /*   background-color: #333; */
+    background-color: rgba(51,51,51,1);
+    clip-path: polygon(
+        40px 0,
+        calc(100% - 40px) 0,
+        100% 40px,
+        100% 100%,
+        100% 100%,
+        0 100%,
+        0 100%,
+        0 40px
+      );
+
+
 }
 #aboutMe-article {
     width: 50%;
     padding:30px;
-    background-color: #333;
+    height: 300px;
+/*   background-color: #333; */
     clip-path: polygon(0 0, 90% 0, 100% 20%, 100% 80%, 90% 100%, 0 100%, 0% 80%, 0% 20%);
 
-    margin-top: -200px;
 }
 #aboutMe-article p {
     font-size: 20px;
@@ -140,22 +208,31 @@ text-align: center;
 }
 
 #skills-bar {
-    background-color: #333;
-    width: 750px;
+/*     background-color: rgba(51,51,51,0.8); */
+    width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  clip-path: polygon(5% 0, 100% 0, 100% 20%, 100% 80%, 100% 100%, 5% 100%, 0% 80%, 0% 20%);
-  margin-bottom: -400px;
-}
+  padding-top: 30px;
+  padding-bottom: 30px;
 
+}
+.skills-con {
+    width: 300px;
+    height: 300px;
+   /*  filter: drop-shadow(0px 0px 4px #E8630A); */
+   filter: drop-shadow(0px 0px 18px #171717);
+}
 .skills {
     color: #E8630A;
     height: 100%;
-    width: 25%;
+    width: 100%;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: #333;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+
 }
 
 .skills h4 {
@@ -177,6 +254,8 @@ text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 700px;
+    background-color: rgba(51,51,51,1);
 }
 
 /* #skills-headline {
@@ -201,105 +280,6 @@ text-align: center;
 
 
 
-
-
-
-/************************************************* About me CONTAINER 4 **/
-#aboutMe-container4 {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: transparent;
-}
-
-
-#aboutMe-container4-CIRCLE-WRAP {
-    filter: drop-shadow(0px 0px 18px rgba(0, 0, 0, 0.65));
-    width: 400px;
-    height: 400px;
-    display: block;
-    margin-right: 100px;
-
-}
-
-#aboutMe-container4-RECT {
-    background-image: url(BACKGROUNDS/IMG_2280.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-
-}
-
-#seeMy-bttns {
-    width: 600px;
-    height: 300px;
-    background-color:#E8630A;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-
-
-
-    clip-path: polygon(0 0, 90% 0, 100% 20%, 100% 80%, 90% 100%, 0 100%, 0% 80%, 0% 20%);
-
-}
-
-
-#aboutMe-container4 button {
-    background-color: #FCD900;
-    cursor: pointer;
-    color:#001E6C;
-    font-family: 'Kanit', sans-serif;;
-    font-size: 25px;
-    font-weight: 700;
-    width: 200px;
-    height: 200px;
-    border: none;
-    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-
-
-}
-/* #SeeMyPortfolio {
-    margin-right: 100px;
-}
- */
-
-
- .socials {
-    width: 150px;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    left: 20px;
-    bottom: 20px;
-}
-
-.socials a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #E8630A;
-    height: 40px;
-    width: 40px;
-}
-
-.socials a svg {
-    width: 80%;
-    height: 80%;
-}
-.socials a svg:hover,#socials a svg:active {
-    width: 100%;
-    height: 100%;
-    transition: all 0.3s ease-out;
-}
 
 
 
