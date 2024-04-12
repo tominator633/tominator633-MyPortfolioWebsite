@@ -5,21 +5,11 @@
     font-family: 'Kanit', sans-serif;
 }
 
-/*   .getborder {
+/*     .getborder {
   border: 2px solid white; 
 }  
  */
-@media only screen and (max-width: 810px) {
-    #navigation-button {
-        width: 50px;
-        height: 50px;
-    }
-    #navigation-button:hover,#navigation-button:active {
-        width: 50px;
-        height: 50px;
-        transition: none;
-    }
-}
+
 /* ############################################################# */
 
 body {
@@ -42,7 +32,7 @@ header {
     padding-left: 30px;
     padding-top: 30px;
 }
-#contact-h2 {
+#about-h2 {
     color: #333;
     font-family: 'Alfa Slab One', serif;
     font-size: 40px;
@@ -96,21 +86,27 @@ header {
     transition: all 0.5s;
 }
 
-#navigation-button {
+
+#mobileNavBtn {
+    display: none;
+    position: absolute;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2000;
     background-color: #333;
     color: #E8630A;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    display: none;
     align-items: center;
     justify-content:center;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border: none;
     cursor: pointer;
     border-radius: 50%;
-    margin-left: 20px;
+    box-shadow: 0px 0px 26px -5px rgba(232,99,10,1);
+
 }
-#navigation-button svg {
+#mobileNavBtn svg {
     width: 100%;
     height: 100%;
     cursor: pointer;
@@ -121,12 +117,49 @@ header {
 #aboutMe-container1 {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
     height: 450px;
 
 }
 
+#aboutMe-article {
+    width: 50%;
+    height: 100%;
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 
+}
+#aboutMe-article p {
+    font-size: 20px;
+   color: white;
+   font-weight: 400;
+   text-align: left;
+}
+
+#aboutMeBtns {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#resumeLink,#portfolioLink {
+    width: 140px;
+    height: 40px;
+    background-color: #333;
+    color: #E8630A;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+
+}
 #portrait-me {
     width: 450px;
     height: 450px;
@@ -149,25 +182,7 @@ header {
     height: auto;
     width: 70%;
 }
-#aboutMeBtns {
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-#resumeLink,#portfolioLink {
-    width: 140px;
-    height: 40px;
-    background-color: white;
-    color: #E8630A;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
 
-}
 
 
 
@@ -192,20 +207,7 @@ header {
 
 
 }
-#aboutMe-article {
-    width: 50%;
-    padding:30px;
-    height: 300px;
-/*   background-color: #333; */
-    clip-path: polygon(0 0, 90% 0, 100% 20%, 100% 80%, 90% 100%, 0 100%, 0% 80%, 0% 20%);
 
-}
-#aboutMe-article p {
-    font-size: 20px;
-   color: white;
-   font-weight: 400;
-   text-align: left;
-}
 
 #skills-bar {
 /*     background-color: rgba(51,51,51,0.8); */
@@ -218,8 +220,8 @@ header {
 
 }
 .skills-con {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
    /*  filter: drop-shadow(0px 0px 4px #E8630A); */
    filter: drop-shadow(0px 0px 18px #171717);
 }
@@ -284,133 +286,5 @@ header {
 
 
 /* ################## ABOUT ME  #####################*/
-
-
-
-/* ###################### QUERIES ################# *//* ###################### QUERIES ################# */
-/* ###################### QUERIES ################# *//* ###################### QUERIES ################# */
-/* ###################### QUERIES ################# *//* ###################### QUERIES ################# */
-/* ###################### QUERIES ################# *//* ###################### QUERIES ################# */
-/* ###################### QUERIES ################# *//* ###################### QUERIES ################# */
-
-
-/*QUERIES*************** about container 1 ************/
-/*QUERIES*************** about container 1 ************/
-@media only screen and (max-width: 1040px) {
-    #aboutMe-container1 {
-        flex-direction: column;
-        padding-top: 80px;
-    }
-    #aboutMe-container2 {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-    #castle {
-        width: 100%;
-    }
-    #aboutMe-article {
-        width: 100%;
-        margin-top: 0px;
-    }
-    #aboutMe-article p {
-        font-size: 17px;
-    }
-}
-
-@media only screen and (max-width: 730px) {
-    #aboutMe h2 {
-        font-size: 50px;
-        padding-bottom: 30px;
-    }
-    #portrait-me {
-        width: 350px;
-        height: 350px;
-    }
-}
-
-/*QUERIES*************** about container 2 ************/
-/*QUERIES*************** about container 2 ************/
-@media only screen and (max-width: 1040px) {
-    #aboutMe-container2 {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-    #castle {
-        width: 100%;
-    }
-    #aboutMe-article {
-        width: 100%;
-        margin-top: 0px;
-    }
-    #aboutMe-article p {
-        font-size: 17px;
-    }
-}
-
-/*QUERIES*************** about container 3 ************/
-/*QUERIES*************** about container 3 ************/
-@media only screen and (max-width: 1215px) {
-    #skills-headline {
-        margin-left: 10px;
-        font-size: 50px;
-    }
-}
-@media only screen and (max-width: 1040px) {
-    #aboutMe-container3 {
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    #skills-headline {
-        text-align: center;
-        width: 100%;
-        margin-left: 0px;
-    }
-    #skills-headline span {
-        font-family: 'Alfa Slab One', serif;
-        font-weight: 200;
-        color: white;
-    }
-}
-@media only screen and (max-width: 840px) {
-    #aboutMe-container3 {
-        align-items: center;
-    }
-    #skills-bar {
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        justify-content: flex-start;
-        clip-path: none;
-        background-color: transparent;
-
-    }
-    
-    .skills {
-        width: 300px;
-        height: 300px;
-        background-color: #E8630A;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        clip-path: polygon(15% 1%, 85% 0, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0 85%, 0 15%);
-
-
-
-    }
-    
-}
-@media only screen and (max-width: 730px) {
-    #skills-bar {
-        width: 80%;
-        clip-path: polygon(10% 0, 90% 0, 100% 5%, 100% 95%, 90% 100%, 10% 100%, 0 95%, 0 5%);
-
-    }
-    #skills-headline {
-        font-size: 40px;
-        padding-bottom: 30px;
-    }
-   
-}
 
 

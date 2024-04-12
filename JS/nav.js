@@ -1,7 +1,7 @@
 
 
 /* ###############  Nav buttons ############# */
-let navButton = document.getElementById("navigation-button");
+let navButton = document.getElementById("mobileNavBtn");
 let navCloseButton = document.getElementById("navigation-close-button");
 let mobileNav = document.getElementById("mobileNav");
 /* Přidej ty vars do funkce (kvuli polution) */

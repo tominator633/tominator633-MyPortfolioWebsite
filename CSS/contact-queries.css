@@ -1,17 +1,32 @@
 /*QUERIES*************** contact ************/
 
 
-@media only screen and (max-width: 810px) {
-    #navigation-button {
-        width: 50px;
-        height: 50px;
+
+
+@media only screen and (max-width: 660px) {
+    #navDesktop {
+        display: none;
     }
-    #navigation-button:hover,#navigation-button:active {
-        width: 50px;
-        height: 50px;
-        transition: none;
+
+    header {
+        justify-content: center;
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    #contact-h2 {
+        font-size: 35px;
+    }
+    #mobileNavBtn {
+        display: flex;
     }
 }
+@media only screen and (min-width: 660px) {
+    #mobileNavBtn {
+        display: none;
+    }
+}
+
+
 
 
 
@@ -32,10 +47,8 @@
     #contact-container1 {
         height: 200px;
     }
-    #contact-h2 {
-        font-size: 50px;
-        width: 100%;
-        text-align: center;
+    #contact-container2 {
+        height: auto;
     }
     #contact-links a {
         height: 60px;
