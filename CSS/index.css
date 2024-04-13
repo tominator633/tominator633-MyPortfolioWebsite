@@ -103,7 +103,7 @@
 
 
 main {
-background-image: url(BACKGROUNDS/singapore.jpg);
+background-image: url(../BACKGROUNDS/singapore.jpg);
 /*  background-attachment: fixed; */
     background-size: cover;
     background-position: center;

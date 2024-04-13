@@ -13,7 +13,8 @@
 /* ############################################################# */
 
 body {
-    background-image: url(BACKGROUNDS/singapore.jpg);
+    background-image: url(../BACKGROUNDS/singapore.jpg);
+    /* github pages accepts this type of link - because the background are outside of CSS folder */
 /*     background-attachment: fixed; */
     background-size: cover;
     background-position: center;
