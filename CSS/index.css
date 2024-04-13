@@ -103,7 +103,7 @@
 
 
 main {
-background-image: url(/BACKGROUNDS/singapore.jpg);
+background-image: url(BACKGROUNDS/singapore.jpg);
 /*  background-attachment: fixed; */
     background-size: cover;
     background-position: center;
@@ -249,7 +249,6 @@ h1 {
 #navDesktop ul li a {
     color: #E8630A;
     text-decoration: none;
-  /*   font-family: 'Alfa Slab One', serif; */
     font-weight: 700;
     font-size: 20px;
     width: 100%;
